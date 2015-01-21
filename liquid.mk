@@ -1,8 +1,8 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common LS stuff.
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/qcom-common/overlay-cm
 
@@ -15,7 +15,7 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_WIDTH := 540
 TARGET_SCREEN_HEIGHT := 960
 
-PRODUCT_NAME := cm_xt897c
+PRODUCT_NAME := liquid_xt897c
 TARGET_VENDOR_PRODUCT_NAME := XT897
 TARGET_VENDOR_DEVICE_NAME := asanti_c
 
